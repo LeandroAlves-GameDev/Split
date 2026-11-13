@@ -19,6 +19,8 @@ funciona_menu = function()
     //rodando o if do click do mouse
     if(_click_mouse && _mouse_acima)
     {
+        //toda vez que eu clico no botão ele roda o som
+        audio_play_sound(beep, 1, 0);
         //se eu apertei o botão do mouse, logo então eu vou pra room fase
         room_goto(rm_fase)
     }

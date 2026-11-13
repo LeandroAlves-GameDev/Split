@@ -21,6 +21,8 @@ funciona_menu = function()
     //rodando o if do click do mouse
     if(_click_mouse && _mouse_acima)
     {
+        //toda vez que eu clico no botão ele roda o som
+        audio_play_sound(beep, 1, 0);
         if (texto == "") return; 
             
         var _frase_atual = obj_dialogo.lista_frases[obj_dialogo.indice_frase];

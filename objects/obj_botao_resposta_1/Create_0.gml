@@ -20,6 +20,8 @@ funciona_menu = function()
     //rodando o if do click do mouse
     if(_click_mouse && _mouse_acima)
     {
+        //toda vez que eu clico no botão ele roda o som
+        audio_play_sound(beep, 1, 0);
         //ele vai verificar se cliquei e mouse está acima
         if (texto == "") return; 
         //se meu texto estiver vazio então ele retorna
